@@ -2,9 +2,35 @@ import React from 'react';
 
 import PageHeader from '../../components/PageHeader';
 
+import './style.css';
+
 const TeacherForm: React.FC = () => (
-  <div id="page-teacher-list" className="contaier">
-    <PageHeader title="Que incrível que você quer dar aulas." />
+  <div id="page-teacher-form" className="contaier">
+    <PageHeader
+      title="Que incrível que você quer dar aulas."
+      description="O primeiro passo é preencher esse formulário de inscrição"
+    />
+
+    <main>
+      <fieldset>
+        <legend>Seus dados</legend>
+
+        <div className="input-block">
+          <label htmlFor="nome">Nome Completo</label>
+          <input type="text" id="nome" />
+        </div>
+
+        <div className="input-block">
+          <label htmlFor="avatar">Avatar</label>
+          <input type="text" id="avatar" />
+        </div>
+
+        <div className="input-block">
+          <label htmlFor="whatsapp">Whatsapp</label>
+          <input type="text" id="whatsapp" />
+        </div>
+      </fieldset>
+    </main>
   </div>
 );
 
