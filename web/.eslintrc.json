@@ -29,6 +29,8 @@
     "prettier"
   ],
   "rules": {
+    "no-alert": "off",
+    "no-console": "off",
     "react/jsx-one-expression-per-line": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "react/prop-types": "off",
