@@ -29,6 +29,8 @@
     "prettier"
   ],
   "rules": {
+    "react/jsx-no-target-blank": "off",
+    "camelcase": "off",
     "no-alert": "off",
     "no-console": "off",
     "react/jsx-one-expression-per-line": "off",
