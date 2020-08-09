@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/src/server.js",
-    "dev:server": "tsnd --transpile-only --ignore-watch node_modules --respawn --no-notify src/server.ts",
+    "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn --no-notify src/server.ts",
     "migration": "knex migrate:latest"
   },
   "devDependencies": {
