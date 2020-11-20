@@ -17,6 +17,10 @@ const landing: React.FC = () => {
     navigation.navigate('GiveClasses')
   }
 
+  const handleNavigateToStuddy = () => {
+    navigation.navigate('Studdy')
+  }
+
   return (
     <View style={styles.container}>
       <Image source={LandingImage} style={styles.banner} />
@@ -29,7 +33,7 @@ const landing: React.FC = () => {
       <View style={styles.buttonsContainer}>
         <RectButton
           style={[styles.button, styles.buttonPrimary]}
-          activeOpacity={0.6}
+          onPress={handleNavigateToStuddy}
         >
           <Image source={studyIcon} />
 
