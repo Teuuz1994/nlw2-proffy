@@ -5,7 +5,9 @@ import styles from './styles'
 
 const TeacherList: React.FC = () => {
   return (
-    <View />
+    <View style={styles.container}>
+
+    </View>
   )
 }
 
