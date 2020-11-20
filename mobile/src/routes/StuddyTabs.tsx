@@ -42,10 +42,10 @@ const StuddyTabs: React.FC = () => {
         component={TeacherList}
         options={{
           tabBarLabel: 'Proffys',
-          tabBarIcon: ({ color, size }) =>
+          tabBarIcon: ({ color, size, focused }) =>
             <Ionicons
               size={size}
-              color={color}
+              color={focused ? '#8257e5' : color}
               name="ios-easel"
             />
         }}
@@ -55,10 +55,10 @@ const StuddyTabs: React.FC = () => {
         component={Favorites}
         options={{
           tabBarLabel: 'Favoritos',
-          tabBarIcon: ({ color, size }) =>
+          tabBarIcon: ({ color, size, focused }) =>
             <Ionicons
               size={size}
-              color={color}
+              color={focused ? '#8257e5' : color}
               name="ios-heart"
             />
         }}
