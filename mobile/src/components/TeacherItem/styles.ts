@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#e6e6f0',
     borderRadius: 8,
-    overflow: 'hidden'
+    overflow: 'hidden',
+    marginBottom: 8
   },
 
   profile: {
